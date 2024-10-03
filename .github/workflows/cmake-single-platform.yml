@@ -33,7 +33,12 @@ jobs:
 
     - name: Test
       working-directory: ${{github.workspace}}/build
+      cd ${{github.workspace}}/build/
+      make
+      cd ${{github.workspace}}/build/src
+      ./hello_world
+      
       # Execute tests defined by the CMake configuration.
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
-      run: echo "run result here"
+      
 
