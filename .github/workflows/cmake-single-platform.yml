@@ -36,8 +36,8 @@ jobs:
       run: |
           cd ${{github.workspace}}/build/
           make
-          ls ${{github.workspace}}/build/
           cd ${{github.workspace}}/build
+          echo "Run builded application"
           ./hello_world
       
       # Execute tests defined by the CMake configuration.
