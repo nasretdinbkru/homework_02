@@ -12,7 +12,7 @@ void local_func() {
 int main() {
   std::cout.fill('#');
   std::cout << GREEN << std::setw(26) << "" << std::endl;
-  std::cout << "## OTUS C++ base cource ##" << std::endl;
+  std::cout << "## OTUS C++ base course ##" << std::endl;
   std::cout << "######- Homework #2 -#####" << RESET << std::endl;
 
   std::cout.fill('=');
